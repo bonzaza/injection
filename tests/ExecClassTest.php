@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests;
+
 use SimpleInjection\DataClass;
 use SimpleInjection\ExecClassWithInjection;
 use PHPUnit\Framework\TestCase;
@@ -38,7 +40,7 @@ class ExecClassTest extends TestCase
      */
     public function testExecClassWithMockeryMock()
     {
-        $dataExternal = Mockery::mock('overload:' . DataClass::class);
+        $dataExternal = \Mockery::mock('overload:' . DataClass::class);
         $dataExternal->shouldReceive('getData')
                     ->once()
                     ->andReturn('forwarded');
