@@ -1,8 +1,6 @@
 <?php
 
-namespace Test;
-
-\class_exists(MockDataClass::class);
+namespace SimpleInjection;
 
 class DataClass
 {

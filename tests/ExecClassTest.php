@@ -1,9 +1,9 @@
 <?php
 
-use Test\DataClass;
-use Test\ExecClassWithInjection;
+use SimpleInjection\DataClass;
+use SimpleInjection\ExecClassWithInjection;
 use PHPUnit\Framework\TestCase;
-use Test\ExecClassWithoutInjection;
+use SimpleInjection\ExecClassWithoutInjection;
 
 /**
  * Prevent setting the class alias for all test suites
